@@ -1,14 +1,15 @@
 const canvas = document.getElementById('Matrix');
 const context = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth - 10;
+canvas.height = window.innerHeight -10;
 
 const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const nums = '0123456789';
+const fa = 'ضشظصسطثیزقبرفلذفغادعتپهنوخمکحجچ';
 
-const alphabet = katakana + latin + nums;
+const alphabet = katakana + latin + nums + fa;
 
 const fontSize = 16;
 const columns = canvas.width/fontSize;
